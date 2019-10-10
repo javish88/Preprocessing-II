@@ -1,1 +1,27 @@
 // Navigation Styles here
+
+.flex-nav { // Flex-nav 
+    font-size: 1.4rem;
+    width: 75%;
+    @media @phone {
+        .flexing(space-between, center);
+        flex-direction: column;
+    }
+    ul { // flex-nav ul
+        .flexing(space-between, center);
+        @media @phone {
+            .flexing(space-between, center);
+            flex-direction: column;
+        }
+        
+    } // End of flex-nav ul
+
+    li { // List
+       
+    } // End of list
+
+    a { // Anchors
+        color: @silver;
+        text-decoration: none;
+    } // End of Anchors
+} // End of Flex-nav
