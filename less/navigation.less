@@ -3,21 +3,22 @@
 .flex-nav { // Flex-nav 
     font-size: 1.4rem;
     width: 75%;
-    @media @phone {
-        .flexing(space-between, center);
-        flex-direction: column;
-    }
+    
     ul { // flex-nav ul
         .flexing(space-between, center);
+        
         @media @phone {
             .flexing(space-between, center);
             flex-direction: column;
+            margin: 20px;
         }
         
     } // End of flex-nav ul
 
     li { // List
-       
+       @media @phone {
+           margin: 20px;
+       }
     } // End of list
 
     a { // Anchors
